@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My freelance site",
-  description: "Portfolio and services",
+  title: "Grace | Full-Stack Software Engineer",
+  description: "Portfolio of Grace, a full-stack software engineer building web applications, APIs, and AI-powered tools.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
         <Navbar />
         {children}
       </body>
