@@ -11,8 +11,12 @@ export default function Hero() {
           <span className="inline-block mb-6 rounded-full border border-periwinkle/40 bg-white/60 px-4 py-1 text-sm font-medium text-violet-blue backdrop-blur">
             ✦ Full-Stack Software Engineer
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-ink">
-            Building software that makes life <span className="gradient-text">a little easier</span>
+          {/* Font scales with the viewport so each line always fits on one row */}
+          <h1 className="text-[clamp(1.125rem,7vw,4.5rem)] leading-tight font-extrabold tracking-tight mb-6 text-ink">
+            <span className="block whitespace-nowrap">Building software that</span>
+            <span className="block whitespace-nowrap">
+              makes life <span className="gradient-text-strong">a little easier</span>
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-ink/70 mb-10 max-w-2xl mx-auto">
             From React and TypeScript to Java and Spring Boot, with a growing focus on AI-powered applications and developer tools.

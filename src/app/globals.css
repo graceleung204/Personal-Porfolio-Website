@@ -41,6 +41,14 @@ body::before {
   color: transparent;
 }
 
+/* Deeper gradient for large headlines so it stands out from the background */
+.gradient-text-strong {
+  background: linear-gradient(100deg, #0284c7, #4f46e5 50%, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .gradient-button {
   background: linear-gradient(100deg, #38bdf8, #8b9cf7 50%, #6d5df5);
   background-size: 200% 100%;
